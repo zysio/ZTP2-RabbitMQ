@@ -11,6 +11,9 @@ namespace Business.Models
          string Message,
          string Channel,
          string Recipient,
-         string Timezone 
+         string Timezone,
+         string Priority,
+         DateTime? Scheduled,
+         string Status
     );
 }

@@ -18,7 +18,12 @@ namespace Business.Mappers
                 Message = notificationDTO.Message,
                 Channel = notificationDTO.Channel,
                 Recipient = notificationDTO.Recipient,
-                Timezone = notificationDTO.Timezone
+                Timezone = notificationDTO.Timezone,
+                Priority = notificationDTO.Priority,
+                Scheduled = notificationDTO.Scheduled.HasValue
+                    ? DateTime.SpecifyKind(notificationDTO.Scheduled.Value, DateTimeKind.Utc)
+                    : null,
+                Status = notificationDTO.Status
             };
         }
 
@@ -29,8 +34,11 @@ namespace Business.Mappers
                 notification.Message,
                 notification.Channel,
                 notification.Recipient,
-                notification.Timezone
-                );
+                notification.Timezone,
+                notification.Priority,
+                notification.Scheduled,
+                notification.Status
+            );
         }
     }
 }

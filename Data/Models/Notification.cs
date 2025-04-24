@@ -17,7 +17,9 @@ public partial class Notification
 
     public string Timezone { get; set; }
 
+    public string Priority { get; set; }
+
     public DateTime? Scheduled { get; set; }
 
-    public bool? Sent { get; set; }
+    public string Status { get; set; }
 }

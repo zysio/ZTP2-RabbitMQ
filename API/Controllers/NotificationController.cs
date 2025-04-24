@@ -49,5 +49,12 @@ namespace API.Controllers
             await _notificationService.DeleteNotificationAsync(id);
             return NoContent();
         }
+
+        [HttpPost("process-pending")]
+        public async Task<IActionResult> ProcessPendingNotifications()
+        {
+            await _notificationService.ProcessPendingNotificationsAsync();
+            return Ok(new { Message = "Pending notifications processed successfully." });
+        }
     }
 }

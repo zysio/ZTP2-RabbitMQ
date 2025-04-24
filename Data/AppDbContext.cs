@@ -25,17 +25,20 @@ public partial class AppDbContext : DbContext
             entity.ToTable("notifications");
 
             entity.Property(e => e.Id).HasColumnName("id");
-            entity.Property(e => e.Channel).HasColumnName("channel");
+            entity.Property(e => e.Channel)
+                .IsRequired()
+                .HasColumnName("channel");
             entity.Property(e => e.Message)
                 .IsRequired()
                 .HasColumnName("message");
-            entity.Property(e => e.Recipient).HasColumnName("recipient");
+            entity.Property(e => e.Priority).HasColumnName("priority");
+            entity.Property(e => e.Recipient)
+                .IsRequired()
+                .HasColumnName("recipient");
             entity.Property(e => e.Scheduled)
-                .HasColumnType("timestamp without time zone")
+                .HasColumnType("timestamp with time zone")
                 .HasColumnName("scheduled");
-            entity.Property(e => e.Sent)
-                .HasDefaultValue(false)
-                .HasColumnName("sent");
+            entity.Property(e => e.Status).HasColumnName("status");
             entity.Property(e => e.Timezone).HasColumnName("timezone");
         });
 

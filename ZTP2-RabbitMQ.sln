@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{6D14DF62-13CC-43AE-BEFE-B2C95642FD84}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailChannel", "EmailChannel\EmailChannel.csproj", "{D19402C9-D854-4BE2-AB62-1C939D48D031}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushChannel", "PushChannel\PushChannel.csproj", "{C462FFBD-C856-45E4-A926-D929E1D2C713}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{6D14DF62-13CC-43AE-BEFE-B2C95642FD84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D14DF62-13CC-43AE-BEFE-B2C95642FD84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D14DF62-13CC-43AE-BEFE-B2C95642FD84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D19402C9-D854-4BE2-AB62-1C939D48D031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D19402C9-D854-4BE2-AB62-1C939D48D031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D19402C9-D854-4BE2-AB62-1C939D48D031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D19402C9-D854-4BE2-AB62-1C939D48D031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C462FFBD-C856-45E4-A926-D929E1D2C713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C462FFBD-C856-45E4-A926-D929E1D2C713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C462FFBD-C856-45E4-A926-D929E1D2C713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C462FFBD-C856-45E4-A926-D929E1D2C713}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
